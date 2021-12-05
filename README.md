@@ -1,0 +1,2 @@
+# Simple IP-Webcam with Configurable Webcam Settings
+This is a proof of concept for using a Raspberry Pi 3 as an outdoor camera. I used a *Creative Live!* webcam. I designed an 3D printed an enclosure to enable the camera to (hopefully) survive being placed outside. This was then combined with [Articulating, Wall-Mounted, Magnetic Phone Mount](https://www.thingiverse.com/thing:2448971) to enable placement.

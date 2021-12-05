@@ -8,9 +8,12 @@
     <h1 class="cam_desc">
         Main Camera
     </h1>
-    <div>
+    <!-- The embedded video -->
+    <div> 
         <img src="{{ url_for('video_feed') }}" class='video_source'/>
     </div>
+
+    <!-- These define the sliders. Copy and paste to change add or remove -->
     <div class='slidercontainer'>
         <h4 id="focus_name">Focus: {{ data.focus }}</h4>
         <input type="range" min="-1" max="27" value="{{ data.focus }}" class=slider id="focus_slider" oninput="changeFocus(this.value)">
@@ -27,7 +30,8 @@
         <h4 id="saturation_name">Saturation: {{ data.saturation }}</h4>
         <input type="range" min="50" max="120" value="{{ data.saturation }}" class=slider id="saturation_slider" oninput="changeSaturation(this.value)">
     </div>
-        
+    
+    <!-- Basic JS to update the slider text and send the values to Python -->
     <script>
         let brightness_slider = document.getElementById("brightness_slider")
         let focus_slider = document.getElementById("focus_slider")

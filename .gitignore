@@ -1,3 +1,5 @@
 
 SecureCam/.vscode/settings.json
 SecureCam/__pycache__/camera.cpython-38.pyc
+*.pyc
+.vscode/settings.json

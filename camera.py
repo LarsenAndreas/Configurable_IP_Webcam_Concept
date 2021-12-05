@@ -1,13 +1,17 @@
 import cv2
 
+# This is the main camera object. This is configured to work on a creative livecam.
+# The setting for an abitrary camera might differ. The same with the values. For a list of
+# possible settings see https://docs.opencv.org/3.4/d4/d15/group__videoio__flags__base.html
+
 class Camera():
 
     def __init__(self):
-        self.cam = cv2.VideoCapture(0)
+        self.cam = cv2.VideoCapture(-1) # Change to 0 if it does not work
 
     def get_frame(self):
         _, img = self.cam.read()
-        img = img[60:-60]
+        img = img[60:-60] # Crops off black borders
         self.frame = cv2.imencode('.jpg', img)[1].tobytes()
         return self.frame
 
