@@ -5,4 +5,4 @@ The website is build using Flask and (VERY) simple JaveScript/HTML. The scaling 
 Created with Python 3.8.12 using miniconda. See requirements.txt
 
 
-<center> <img src="static/ip_cam.png" align="center" width=200> </center>
+<center> <img src="static/ip_cam.png" width=200> </center>
